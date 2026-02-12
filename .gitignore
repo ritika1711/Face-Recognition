@@ -61,13 +61,20 @@ venv.bak/
 Thumbs.db
 
 # Data files (large encodings and images)
-data/encodings/*.npy
-data/images/
+data/
+*.npy
+*.npy.gz
+
+# Image files (all formats)
 *.jpg
 *.jpeg
 *.png
 *.gif
 *.bmp
+*.tiff
+*.tif
+*.webp
+*.ico
 
 # Models and checkpoints
 *.pkl
@@ -76,18 +83,36 @@ data/images/
 *.pth
 *.pt
 *.model
+*.pb
+*.onnx
+*.joblib
 models/
 checkpoints/
+weights/
+saved_models/
 
-# Temporary files
+# Temporary and cache files
 *.tmp
 *.temp
 temp/
-temp_*.jpg
-temp_*.jpeg
+temp_*.*
+*.cache
+.cache/
+
+# Archives (large compressed files)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.dmg
 
 # Results and logs
 results/
 logs/
 *.log
 output/
+*.xlsx
+*.xls
+*.csv
